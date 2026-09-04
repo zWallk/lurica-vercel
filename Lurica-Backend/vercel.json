@@ -1,20 +1,11 @@
 {
-  "version": 2,
-  "buildCommand": "npm install",
-  "devCommand": "node index.js",
-  "env": {
-    "DB_HOST": "@db_host",
-    "DB_USER": "@db_user",
-    "DB_PASSWORD": "@db_password",
-    "DB_PORT": "@db_port",
-    "DB_NAME": "@db_name",
-    "JWT_SECRET": "@jwt_secret",
-    "PORT": "3001"
-  },
-  "functions": {
-    "api/**/*.js": {
-      "memory": 1024,
-      "maxDuration": 60
+    "version": 2,
+    "buildCommand": "npm install",
+    "devCommand": "node index.js",
+    "functions": {
+          "api/**/*.js": {
+                  "memory": 1024,
+                  "maxDuration": 60
+          }
     }
-  }
 }
