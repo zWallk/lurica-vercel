@@ -1,0 +1,74 @@
+[
+    {
+        "name": "María González",
+        "rating": 5,
+        "text": "Excelente calidad en sus productos. La atención es muy profesional y las joyas son hermosas. Definitivamente la mejor proveedora mayorista.",
+        "date": "Marzo 2024"
+    },
+    {
+        "name": "Carlos Ramírez",
+        "rating": 5,
+        "text": "Los precios son inmejorables y la calidad supera las expectativas. Mi negocio ha crecido significativamente desde que empecé a trabajar con Lurica.",
+        "date": "Febrero 2024"
+    },
+    {
+        "name": "Ana Valencia",
+        "rating": 4,
+        "text": "Muy satisfecha con el servicio. Las entregas son puntuales y el catálogo siempre está actualizado con las últimas tendencias.",
+        "date": "Marzo 2024"
+    },
+    {
+        "name": "Laura Martínez",
+        "rating": 5,
+        "text": "Mi experiencia con Lurica ha sido excepcional. El servicio al cliente es impecable y la calidad de las joyas es consistente.",
+        "date": "Enero 2024"
+    },
+    {
+        "name": "Diego Morales",
+        "rating": 5,
+        "text": "Las colecciones son hermosas y mis clientes siempre quedan encantados. El equipo de Lurica es muy profesional y servicial.",
+        "date": "Febrero 2024"
+    },
+    {
+        "name": "Patricia Vélez",
+        "rating": 5,
+        "text": "Increíble relación calidad-precio. Han sido fundamentales para el crecimiento de mi negocio.",
+        "date": "Marzo 2024"
+    },
+    {
+        "name": "Sofia Torres",
+        "rating": 4,
+        "text": "Excelente variedad de productos y precios muy competitivos. El servicio postventa es excepcional.",
+        "date": "Enero 2024"
+    },
+    {
+        "name": "Juan Pérez",
+        "rating": 5,
+        "text": "La mejor decisión para mi negocio fue asociarme con Lurica. Productos de primera y atención personalizada.",
+        "date": "Febrero 2024"
+    },
+    {
+        "name": "Isabella Ruiz",
+        "rating": 5,
+        "text": "Siempre encuentro lo que busco y más. La calidad es constante y el servicio es excepcional.",
+        "date": "Marzo 2024"
+    },
+    {
+        "name": "Ricardo Mendoza",
+        "rating": 4,
+        "text": "Gran variedad de productos y excelentes precios mayoristas. Muy satisfecho con la calidad.",
+        "date": "Febrero 2024"
+    },
+    {
+        "name": "Carmen Ortiz",
+        "rating": 5,
+        "text": "Lurica ha superado todas mis expectativas. Su compromiso con la calidad es admirable.",
+        "date": "Marzo 2024"
+    },
+    {
+        "name": "Felipe Vargas",
+        "rating": 5,
+        "text": "El mejor proveedor con el que he trabajado. Productos excepcionales y servicio cinco estrellas.",
+        "date": "Enero 2024"
+    }
+]

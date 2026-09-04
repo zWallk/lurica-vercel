@@ -1,0 +1,30 @@
+/* Footer specific styles */
+footer a {
+    text-decoration: none;
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Smooth hover transitions */
+footer a, 
+footer button {
+    transition: all 0.3s ease;
+}
+
+a {
+    color: #a19885 !important;
+}
+
+a:hover {
+    color: #a59c89 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}

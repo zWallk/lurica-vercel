@@ -1,0 +1,311 @@
+/* Estilos base del header */
+.header-section {
+    position: relative;
+    background: #1B201E;
+}
+
+.header-bg-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.header-bg-image img {
+    filter: brightness(0.75) contrast(1.1);
+    transition: transform 8s ease-out;
+}
+
+.header-section:hover .header-bg-image img {
+    transform: scale(1.05);
+}
+
+.header-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg, 
+        rgba(27, 32, 30, 0.7) 0%, 
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(27, 32, 30, 0.8) 100%
+    );
+    backdrop-filter: blur(1px);
+}
+
+/* Elementos decorativos */
+.header-decoration {
+    position: absolute;
+    background: radial-gradient(circle, rgba(196, 186, 166, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(50px);
+    animation: float 10s ease-in-out infinite;
+}
+
+.header-decoration-1 {
+    width: 350px;
+    height: 350px;
+    top: -100px;
+    left: -100px;
+    animation-delay: 0s;
+}
+
+.header-decoration-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -150px;
+    right: -150px;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(30px, 30px) scale(1.1);
+    }
+}
+
+/* Contenido del header */
+.header-content {
+    position: relative;
+}
+
+/* Líneas decorativas */
+.header-line-decoration {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #C4BAA6 50%, transparent 100%);
+    margin: 0 auto;
+}
+
+/* Subtítulo */
+.header-subtitle {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.header-subtitle::before,
+.header-subtitle::after {
+    content: '◆';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.6em;
+    opacity: 0.6;
+}
+
+.header-subtitle::before {
+    left: -30px;
+}
+
+.header-subtitle::after {
+    right: -30px;
+}
+
+/* Título principal */
+.header-h1 {
+    color: #C4BAA6 !important;
+    text-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.3),
+        0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.giant-text {
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+/* Botón CTA mejorado */
+.header-cta-button {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    background: rgba(196, 186, 166, 0.08);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(196, 186, 166, 0.4);
+    color: #C4BAA6;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header-cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(196, 186, 166, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.header-cta-button:hover::before {
+    left: 100%;
+}
+
+.header-cta-button:hover {
+    border-color: #C4BAA6;
+    background: rgba(196, 186, 166, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    color: #d4c9b1;
+}
+
+.header-cta-text {
+    position: relative;
+    z-index: 1;
+}
+
+.header-cta-icon {
+    font-size: 1.3em;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.header-cta-button:hover .header-cta-icon {
+    transform: translateX(5px);
+}
+
+/* Indicador de scroll */
+.header-scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll-mouse {
+    width: 26px;
+    height: 42px;
+    border: 2px solid rgba(196, 186, 166, 0.5);
+    border-radius: 15px;
+    position: relative;
+    background: linear-gradient(135deg, rgba(196, 186, 166, 0.05) 0%, transparent 100%);
+    backdrop-filter: blur(5px);
+}
+
+.scroll-wheel {
+    width: 4px;
+    height: 8px;
+    background: #C4BAA6;
+    border-radius: 2px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll-animation 2s infinite;
+}
+
+@keyframes scroll-animation {
+    0% {
+        opacity: 1;
+        top: 8px;
+    }
+    50% {
+        opacity: 0.5;
+        top: 20px;
+    }
+    100% {
+        opacity: 0;
+        top: 28px;
+    }
+}
+
+/* Responsive - Tablet pequeña */
+@media (min-width: 640px) {
+    .giant-text {
+        font-size: 5rem;
+    }
+    
+    .header-cta-button {
+        padding: 1.1rem 3rem;
+        font-size: 1.05rem;
+    }
+    
+    .header-subtitle::before {
+        left: -40px;
+    }
+    
+    .header-subtitle::after {
+        right: -40px;
+    }
+}
+
+/* Responsive - Tablet */
+@media (min-width: 768px) {
+    .giant-text {
+        font-size: 6rem;
+    }
+    
+    .header-decoration-1 {
+        width: 500px;
+        height: 500px;
+    }
+    
+    .header-decoration-2 {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+/* Responsive - Laptop */
+@media (min-width: 1024px) {
+    .giant-text {
+        font-size: 6.5rem;
+    }
+    
+    .header-cta-button {
+        padding: 1.2rem 3.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsive - Desktop grande */
+@media (min-width: 1280px) {
+    .giant-text {
+        font-size: 8rem;
+    }
+    
+    .header-decoration-1 {
+        width: 600px;
+        height: 600px;
+    }
+    
+    .header-decoration-2 {
+        width: 700px;
+        height: 700px;
+    }
+}
+
+/* Responsive - Celular */
+@media (max-width: 639px) {
+    .giant-text {
+        font-size: 3.5rem;
+    }
+    
+    .header-cta-button {
+        padding: 0.9rem 2rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.15em;
+    }
+    
+    .header-subtitle::before,
+    .header-subtitle::after {
+        display: none;
+    }
+    
+    .header-scroll-indicator {
+        bottom: 25px;
+    }
+}

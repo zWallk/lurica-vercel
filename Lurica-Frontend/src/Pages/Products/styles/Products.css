@@ -1,0 +1,32 @@
+/* Añade esto a tu archivo CSS existente */
+
+/* Custom scrollbar for suggestions dropdown */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #1B201E;
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #C4BAA6;
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #a59c89;
+}
+
+.products-title{
+    color: #C4BAA6 !important;
+}
+
+.whatsapp-color {
+    color: #1B201E !important;
+}
+
+.whatsapp-color:hover {
+    color: #1B201E !important;
+}

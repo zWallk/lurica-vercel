@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.h2-title {
+  font-size: 3rem !important;
+  color: #C4BAA6 !important;
+}
+a {
+  text-decoration: none !important;
+}
